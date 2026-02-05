@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class UiTimer : MonoBehaviour
@@ -9,18 +7,17 @@ public class UiTimer : MonoBehaviour
     [Header("Time")]
     [SerializeField] private int minutes;
     [SerializeField] private float seconds;
-
     private bool isOver = false;
 
     [Header("Ui")]
-    [SerializeField] private TMP_Text textTimer;
+    [SerializeField] private TextMeshProUGUI textTimer;
 
     [Header("Componets")]
-    private UiDeath gameOver;
+    private UiEvents gameOver;
 
     private void Awake()
     {
-        gameOver = GetComponent<UiDeath>();
+        gameOver = GetComponent<UiEvents>();
     }
     private void Update()
     {
@@ -28,7 +25,7 @@ public class UiTimer : MonoBehaviour
         if (!isOver) Timer();
     }
 
-    public void Timer()
+    private void Timer()
     {
         seconds -= Time.deltaTime;
         if (minutes <= 0 && seconds <= 0)

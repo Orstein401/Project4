@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class BulletTurret : MonoBehaviour
 {
-    [SerializeField] private float lifeTime;
-    private Rigidbody rb;
-    private Vector3 directionBullet;
+    [Header("Parametres")]
     private float speed;
     private float damage;
+    [SerializeField] private float lifeTime;
+    [Header("Componets")]
+    private Rigidbody rb;
+    [Header("Direction")]
+    private Vector3 directionBullet;
+    
 
     private void Awake()
     {

@@ -8,7 +8,11 @@ public class PlayerController : MonoBehaviour
 
     [Header("Parametres")]
     [Header("Speed")]
-    [SerializeField] private float speed;
+    [SerializeField] private float minSpeed;
+    [SerializeField] private float maxSpeed;
+    [SerializeField] private float airSpeed;
+
+
 
     [Header("Jump")]
     [SerializeField] private float jumpForce;
@@ -18,12 +22,15 @@ public class PlayerController : MonoBehaviour
 
     [Header("CurrentValue")]
     private int numJump;
+    private float currentSpeed;
 
 
     [Header("Input")]
     private float horizontal;
     private float vertical;
     private bool jump;
+    private bool run;
+
 
     [Header("newVelocity and Direction")]
     private Vector3 velocity;
@@ -32,10 +39,12 @@ public class PlayerController : MonoBehaviour
     [Header("CheckGround")]
     [SerializeField] private Transform checkerGround;
     [SerializeField] private float radiusChecker;
-    private bool isGroundend = false;
+    private bool isGrounded = false;
 
     private bool IsArrivedToGround = true;
 
+
+    Vector3 support;
 
     private void Awake()
     {
@@ -46,12 +55,14 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         //Check if it is touching a surface
-        isGroundend = Physics.CheckSphere(checkerGround.position, radiusChecker);
-        IsGrounded();
+        isGrounded = Physics.CheckSphere(checkerGround.position, radiusChecker);
 
         //Controller 
         GetInput();
         CalculateVelocity();
+        IsGrounded();
+
+
 
 
     }
@@ -75,10 +86,20 @@ public class PlayerController : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+        run= Input.GetKey(KeyCode.LeftShift);
+        if (run)
+        {
+            currentSpeed = maxSpeed;
+        }
+        else
+        {
+            currentSpeed = minSpeed;
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             jump = true;
         }
+        
 
     }
 
@@ -89,7 +110,7 @@ public class PlayerController : MonoBehaviour
         direction.y = 0f;
         direction.Normalize();
 
-        velocity = new Vector3(direction.x * speed, rb.velocity.y, direction.z * speed);
+        velocity = new Vector3(direction.x * currentSpeed, rb.velocity.y, direction.z * currentSpeed);
     }
 
     private void CalculateRotation()
@@ -99,23 +120,32 @@ public class PlayerController : MonoBehaviour
         rb.MoveRotation(rotation);
     }
 
+
     private void Jump()
     {
-        if (jump && (isGroundend || numJump < maxJump))
+        if (jump && (isGrounded || numJump < maxJump))
         {
-            velocity.y = jumpForce;
+            
+            velocity = new Vector3( direction.x*airSpeed,jumpForce,direction.z*airSpeed);
+            support = velocity;
             numJump++;
             jump = false;
-          
+
         }
 
     }
 
     public void IsGrounded()
     {
-        if (isGroundend)
+       
+        if (isGrounded)
         {
             numJump = 0;
+           support= velocity;
+        }
+        else
+        {
+           velocity= new Vector3(support.x+direction.x*airSpeed,rb.velocity.y, support.z + direction.z * airSpeed);
         }
        
         

@@ -8,7 +8,7 @@ public class Coin : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float amplitude;
-    [SerializeField] UnityEvent<int> coinCount;
+    [SerializeField] private UnityEvent<int> coinCount;
     [SerializeField] private int valueCoin;
 
     private void Update()
