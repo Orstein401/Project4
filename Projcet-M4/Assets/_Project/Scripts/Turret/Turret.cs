@@ -5,7 +5,7 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     [Header("Transform of reference")]
-    [SerializeField] private Transform player;
+    [SerializeField] private GameObject player; //Inizialmente passavo il transform ma questo faceva problemi dove che sono diventati prefab
     [SerializeField] private Transform firePoint;
 
     [Header("Parametres turret")]
@@ -22,11 +22,12 @@ public class Turret : MonoBehaviour
     [SerializeField] private float speedProjectile;
     [SerializeField] private float damageProjectile;
 
+    
     private void Update()
     {
         if (player != null)
         {
-            direction = player.position - transform.position;
+            direction = player.transform.position - transform.position;
             if (direction.magnitude <= range)
             {
                 RotateTurret();
@@ -53,7 +54,7 @@ public class Turret : MonoBehaviour
         direction.y = 0;
         direction.Normalize();
         Quaternion targetRotation = Quaternion.LookRotation(direction);
-        Quaternion rotation = Quaternion.Lerp(transform.rotation, targetRotation, speedRotation * Time.fixedDeltaTime);
+        Quaternion rotation = Quaternion.Lerp(transform.rotation, targetRotation, speedRotation * Time.deltaTime);
 
         transform.rotation = rotation;
     }
