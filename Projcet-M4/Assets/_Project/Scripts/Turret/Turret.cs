@@ -5,7 +5,7 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     [Header("Transform of reference")]
-    [SerializeField] private GameObject player; //Inizialmente passavo il transform ma questo faceva problemi dove che sono diventati prefab
+    [SerializeField] private GameObject player; //Inizialmente passavo il transform ma questo faceva problemi, qunado sono diventati prefab
     [SerializeField] private Transform firePoint;
 
     [Header("Parametres turret")]
@@ -61,20 +61,3 @@ public class Turret : MonoBehaviour
 
 
 }
-
-//fatto con OnTrigger
-//private void OnTriggerStay(Collider other)
-//{
-
-//    if (other.TryGetComponent<PlayerController>(out var player))
-//    {
-//        direction = player.transform.position - transform.position;
-//        RotateTurret();
-//        if (Time.time - lastTimeShoot > fireRate)
-//        {
-//            Shoot(direction);
-//            lastTimeShoot = Time.time;
-//        }
-//    }
-
-//}

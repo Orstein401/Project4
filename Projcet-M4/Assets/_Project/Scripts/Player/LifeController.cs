@@ -8,6 +8,7 @@ public class LifeController:MonoBehaviour
 {
     [SerializeField] private float hp = 200;
     [SerializeField] private float maxHp = 200;
+
     [SerializeField] private UnityEvent<float, float> healthBar;
     [SerializeField] private UnityEvent deathUi;
 

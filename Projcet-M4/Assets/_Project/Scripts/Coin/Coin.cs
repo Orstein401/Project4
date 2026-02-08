@@ -6,8 +6,11 @@ using UnityEngine.Events;
 
 public class Coin : MonoBehaviour
 {
+    [Header("MovementCoin")]
     [SerializeField] private float speed;
     [SerializeField] private float amplitude;
+
+    [Header("Value and Count")]
     [SerializeField] private UnityEvent<int> coinCount;
     [SerializeField] private int valueCoin;
 

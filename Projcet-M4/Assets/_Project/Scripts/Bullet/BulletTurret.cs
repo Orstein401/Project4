@@ -8,8 +8,10 @@ public class BulletTurret : MonoBehaviour
     private float speed;
     private float damage;
     [SerializeField] private float lifeTime;
+
     [Header("Componets")]
     private Rigidbody rb;
+
     [Header("Direction")]
     private Vector3 directionBullet;
     

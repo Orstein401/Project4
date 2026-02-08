@@ -41,7 +41,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float radiusChecker;
     private bool isGrounded = false;
 
-    private bool IsArrivedToGround = true;
 
 
     Vector3 support;
@@ -72,13 +71,6 @@ public class PlayerController : MonoBehaviour
         rb.velocity = velocity;
 
         if (direction != Vector3.zero) CalculateRotation();
-
-        if (transform.position.y <= 0 && IsArrivedToGround)
-        {
-            Debug.Log(Time.time);
-            IsArrivedToGround = false;
-        }
-
     }
 
 
@@ -86,7 +78,7 @@ public class PlayerController : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
-        run= Input.GetKey(KeyCode.LeftShift);
+        run = Input.GetKey(KeyCode.LeftShift);
         if (run)
         {
             currentSpeed = maxSpeed;
@@ -99,7 +91,7 @@ public class PlayerController : MonoBehaviour
         {
             jump = true;
         }
-        
+
 
     }
 
@@ -125,8 +117,8 @@ public class PlayerController : MonoBehaviour
     {
         if (jump && (isGrounded || numJump < maxJump))
         {
-            
-            velocity = new Vector3( direction.x*airSpeed,jumpForce,direction.z*airSpeed);
+
+            velocity = new Vector3(direction.x * airSpeed, jumpForce, direction.z * airSpeed);
             support = velocity;
             numJump++;
             jump = false;
@@ -137,18 +129,18 @@ public class PlayerController : MonoBehaviour
 
     public void IsGrounded()
     {
-       
+
         if (isGrounded)
         {
             numJump = 0;
-           support= velocity;
+            support = velocity;
         }
         else
         {
-           velocity= new Vector3(support.x+direction.x*airSpeed,rb.velocity.y, support.z + direction.z * airSpeed);
+            velocity = new Vector3(support.x + direction.x * airSpeed, rb.velocity.y, support.z + direction.z * airSpeed);
         }
-       
-        
+
+
     }
     private void OnDrawGizmos()
     {
@@ -158,36 +150,3 @@ public class PlayerController : MonoBehaviour
 
 }
 
-//First Version
-//private void CalculateVelocity()
-//{
-//    _velocity = new Vector3(horizontal, 0, vertical);
-//    if (_velocity.magnitude > 1) _velocity.Normalize();
-
-//    //moltiplico per la speed singolarmente, per evitare che la gravita venga accelerata;
-//    _velocity.x *= speed;
-//    _velocity.y = rb.velocity.y;
-//    _velocity.z *= speed;
-//}
-
-//Verifica della Velocita in diagonale
-
-//float StartTime = 0;
-//bool start = false;
-//bool fin = false;
-//public void CrometerSpeed()
-//{
-
-//    if (transform.position.x >= 0 && !start)
-//    {
-//        start = true;
-//        StartTime = Time.time;
-//        Debug.Log("start at " + StartTime);
-//    }
-//    if (transform.position.x >= 10 && !fin)
-//    {
-//        fin = true;
-//        StartTime -= Time.time;
-//        Debug.Log("ci ha messo " + StartTime);
-//    }
-//}
