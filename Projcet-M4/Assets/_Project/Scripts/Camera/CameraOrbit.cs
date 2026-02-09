@@ -6,7 +6,7 @@ using UnityEngine.Rendering;
 public class CameraOrbit : MonoBehaviour
 {
     [Header("Target")]
-    [SerializeField] private GameObject target;
+    [SerializeField] private Transform target;
 
     [Header("PositionCam")]
     [SerializeField] private Vector3 offSet;
@@ -54,6 +54,6 @@ public class CameraOrbit : MonoBehaviour
 
         rotation = Quaternion.Euler(pitch, yaw, 0f);
 
-        desirePos = target.transform.position + rotation * offSet;
+        desirePos = target.position + rotation * offSet;
     }
 }

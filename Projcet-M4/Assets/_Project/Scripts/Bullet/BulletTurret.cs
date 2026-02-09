@@ -38,7 +38,7 @@ public class BulletTurret : MonoBehaviour
     {
         this.damage = damage;
     }
-    public void SetDirectionRotationAndSpeed(Vector3 direction, float speedP)
+    public void SetDirectionRotationAndSpeed(Vector3 direction, float speedBullet)
     {
         if(direction.magnitude>1)direction.Normalize();
         directionBullet = direction;
@@ -46,7 +46,7 @@ public class BulletTurret : MonoBehaviour
         Quaternion rotation = Quaternion.LookRotation(direction);
         rb.MoveRotation(rotation);
 
-        speed= speedP;
+        speed= speedBullet;
     }
 
 }

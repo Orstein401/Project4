@@ -248,7 +248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 10577060}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ZoneReTryng
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,56 +389,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1067141603}
     m_Modifications:
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: valueCoin
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 309999812}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddCoinToCounter
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UiCoin, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -511,7 +461,7 @@ GameObject:
   - component: {fileID: 44446966}
   - component: {fileID: 44446965}
   - component: {fileID: 44446964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1321,12 +1271,12 @@ PrefabInstance:
     - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
         type: 3}
@@ -1386,7 +1336,7 @@ PrefabInstance:
     - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
         type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2991583551155276388, guid: 0a1bc84a4899af94b924af97b8adc03d,
         type: 3}
@@ -2119,7 +2069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0342fdd13b6625649b42cd6cf92b88fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 876141664}
+  target: {fileID: 876141671}
   offSet: {x: 0, y: 0, z: -10}
   bottomClamp: 0
   upClamp: 50
@@ -2992,56 +2942,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1067141603}
     m_Modifications:
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: valueCoin
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 309999812}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddCoinToCounter
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UiCoin, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4552,7 +4452,7 @@ GameObject:
   - component: {fileID: 871446494}
   - component: {fileID: 871446493}
   - component: {fileID: 871446492}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4651,6 +4551,12 @@ Transform:
 --- !u!1 &876141664 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6239654549878618572, guid: 62312b19ae8b53b47b9ed9e41bbf5f74,
+    type: 3}
+  m_PrefabInstance: {fileID: 8319822677089156655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &876141671 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6491388487477089284, guid: 62312b19ae8b53b47b9ed9e41bbf5f74,
     type: 3}
   m_PrefabInstance: {fileID: 8319822677089156655}
   m_PrefabAsset: {fileID: 0}
@@ -4863,7 +4769,7 @@ GameObject:
   - component: {fileID: 960014457}
   - component: {fileID: 960014456}
   - component: {fileID: 960014455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ZoneTutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5811,7 +5717,7 @@ Transform:
   m_GameObject: {fileID: 1067141602}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.048, y: -73.337944, z: 1.519}
+  m_LocalPosition: {x: -0.048, y: -70, z: 1.519}
   m_LocalScale: {x: 0.033333335, y: 10, z: 0.033333335}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6553,7 +6459,7 @@ GameObject:
   - component: {fileID: 1188977873}
   - component: {fileID: 1188977872}
   - component: {fileID: 1188977871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Flounder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7524,56 +7430,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1067141603}
     m_Modifications:
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: valueCoin
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 309999812}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddCoinToCounter
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UiCoin, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8729,56 +8585,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1067141603}
     m_Modifications:
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: valueCoin
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 309999812}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddCoinToCounter
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UiCoin, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9166,7 +8972,7 @@ GameObject:
   - component: {fileID: 1578890073}
   - component: {fileID: 1578890072}
   - component: {fileID: 1578890071}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9731,7 +9537,7 @@ GameObject:
   - component: {fileID: 1671383093}
   - component: {fileID: 1671383092}
   - component: {fileID: 1671383091}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9984,7 +9790,7 @@ GameObject:
   - component: {fileID: 1732766110}
   - component: {fileID: 1732766109}
   - component: {fileID: 1732766108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10567,7 +10373,7 @@ GameObject:
   - component: {fileID: 1810909935}
   - component: {fileID: 1810909934}
   - component: {fileID: 1810909933}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'Flounder '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11858,7 +11664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1983579473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Street
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11936,7 +11742,7 @@ PrefabInstance:
     - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5300002
+      value: 0.27999973
       objectReference: {fileID: 0}
     - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
         type: 3}
@@ -12128,7 +11934,7 @@ Transform:
   m_GameObject: {fileID: 2008335217}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -10, z: 0}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
   m_LocalScale: {x: 0.05, y: 10, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12329,7 +12135,7 @@ GameObject:
   - component: {fileID: 2057141113}
   - component: {fileID: 2057141112}
   - component: {fileID: 2057141111}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: VictoryZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12450,7 +12256,7 @@ Transform:
   m_GameObject: {fileID: 2060405631}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.085, y: 54.8, z: 1.8584999}
+  m_LocalPosition: {x: -0.085, y: 53, z: 1.8584999}
   m_LocalScale: {x: 0.05, y: 10, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13265,56 +13071,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1067141603}
     m_Modifications:
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: valueCoin
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 309999812}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: AddCoinToCounter
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UiCoin, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 407838971710821210, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: coinCount.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1597577043172581939, guid: 0a1bc84a4899af94b924af97b8adc03d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13583,6 +13339,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8656748273829439436, guid: 2c9ca6ba98e0cf14ba78e96ba62431b5,
         type: 3}
+      propertyPath: minutes
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656748273829439436, guid: 2c9ca6ba98e0cf14ba78e96ba62431b5,
+        type: 3}
+      propertyPath: seconds
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8656748273829439436, guid: 2c9ca6ba98e0cf14ba78e96ba62431b5,
+        type: 3}
       propertyPath: textTimer
       value: 
       objectReference: {fileID: 3466968}
@@ -13614,10 +13380,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 421587891540338359, guid: 62312b19ae8b53b47b9ed9e41bbf5f74,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 421587891540338359, guid: 62312b19ae8b53b47b9ed9e41bbf5f74,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 453422406598441423, guid: 62312b19ae8b53b47b9ed9e41bbf5f74,
         type: 3}
       propertyPath: maxJump
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 453422406598441423, guid: 62312b19ae8b53b47b9ed9e41bbf5f74,
+        type: 3}
+      propertyPath: ground.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 985479682765050896, guid: 62312b19ae8b53b47b9ed9e41bbf5f74,
         type: 3}

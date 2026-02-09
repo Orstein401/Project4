@@ -35,15 +35,17 @@ public class PlayerController : MonoBehaviour
     [Header("newVelocity and Direction")]
     private Vector3 velocity;
     private Vector3 direction;
+    private Vector3 lastVelocity;
 
     [Header("CheckGround")]
     [SerializeField] private Transform checkerGround;
     [SerializeField] private float radiusChecker;
+    [SerializeField] private LayerMask ground;
     private bool isGrounded = false;
 
 
 
-    Vector3 support;
+
 
     private void Awake()
     {
@@ -53,10 +55,8 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        //Check if it is touching a surface
-        isGrounded = Physics.CheckSphere(checkerGround.position, radiusChecker);
+        isGrounded = Physics.CheckSphere(checkerGround.position, radiusChecker,ground);
 
-        //Controller 
         GetInput();
         CalculateVelocity();
         IsGrounded();
@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
         {
 
             velocity = new Vector3(direction.x * airSpeed, jumpForce, direction.z * airSpeed);
-            support = velocity;
+            lastVelocity = velocity;
             numJump++;
             jump = false;
 
@@ -133,11 +133,11 @@ public class PlayerController : MonoBehaviour
         if (isGrounded)
         {
             numJump = 0;
-            support = velocity;
+            lastVelocity = velocity;
         }
         else
         {
-            velocity = new Vector3(support.x + direction.x * airSpeed, rb.velocity.y, support.z + direction.z * airSpeed);
+            velocity = new Vector3(lastVelocity.x + direction.x * airSpeed, rb.velocity.y, lastVelocity.z + direction.z * airSpeed);
         }
 
 
