@@ -10,6 +10,10 @@ public class UiCoin : MonoBehaviour
     [SerializeField] private UnityEvent eventsUi;
     private int currentCoin;
 
+    private void Start()
+    {
+        textCoin.SetText($"{currentCoin}/{maxCoin}");
+    }
     public void AddCoinToCounter(int numCoin)
     {
         currentCoin += numCoin;

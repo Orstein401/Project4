@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Jump")]
     [SerializeField] private float jumpForce;
-    [SerializeField] private int maxJump;
+    [SerializeField] private int maxNumJump;
 
     [SerializeField] private float speedRotation;
 
@@ -51,11 +51,12 @@ public class PlayerController : MonoBehaviour
     {
         if (rb == null) rb = GetComponent<Rigidbody>();
         cam = Camera.main;
+        numJump = 1;
     }
 
     private void Update()
     {
-        isGrounded = Physics.CheckSphere(checkerGround.position, radiusChecker,ground);
+        isGrounded = Physics.CheckSphere(checkerGround.position, radiusChecker, ground);
 
         GetInput();
         CalculateVelocity();
@@ -115,7 +116,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
-        if (jump && (isGrounded || numJump < maxJump))
+        if (jump && (isGrounded || numJump < maxNumJump))
         {
 
             velocity = new Vector3(direction.x * airSpeed, jumpForce, direction.z * airSpeed);
@@ -132,7 +133,7 @@ public class PlayerController : MonoBehaviour
 
         if (isGrounded)
         {
-            numJump = 0;
+            numJump = 1;
             lastVelocity = velocity;
         }
         else

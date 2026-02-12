@@ -98,7 +98,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: ff9d08ee3504d834ab52b615617e95ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -152,8 +152,8 @@ Rigidbody:
   m_GameObject: {fileID: 6239654549878618572}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 5
-  m_AngularDrag: 0.05
+  m_Drag: 0
+  m_AngularDrag: 2
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -186,10 +186,13 @@ MonoBehaviour:
   maxSpeed: 10
   airSpeed: 3
   jumpForce: 10
-  maxJump: 2
+  maxNumJump: 2
   speedRotation: 5
   checkerGround: {fileID: 3369431558119440954}
   radiusChecker: 0.1
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &985479682765050896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +299,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 969fd113124d63048b72a6995c634313, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
