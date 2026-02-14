@@ -43,7 +43,6 @@ public class UiTimer : MonoBehaviour
             }
         }
         
-
         textTimer.SetText($"{minutes}:{seconds:00}");
     }
 }

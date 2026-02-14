@@ -13,7 +13,6 @@ public class DeathEvent : MonoBehaviour
         else
         {
             Destroy(collision.gameObject);
-        }
-      
+        }     
     }
 }
